@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-image: url("https://64.media.tumblr.com/95206687f47e4f71d576133d3db40b2c/e920e7c30bbb9e93-8d/s640x960/3e2212058e81d3df280f9743f9cf121cc9a70a36.gifv");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: contain;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  h1 {
+    padding: 2rem;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .swiperContainer {
+      overflow-x: hidden;
+      margin-top: 25px;
+      padding: 0 2rem;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .swiper-pagination-bullet {
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgb(255, 162, 0);
+    opacity: 1;
+  }
+}
